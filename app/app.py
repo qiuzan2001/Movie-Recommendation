@@ -5,7 +5,9 @@ import pandas as pd
 import sys
 import os
 
-sys.path.append('..')
+ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(ROOT_DIR)
+
 from utils.data_loader import load_data
 from utils.ibcf import myIBCF
 from utils.popularity import define_popularity
