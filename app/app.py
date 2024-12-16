@@ -17,7 +17,7 @@ st.title("Movie Recommendation System (System II)")
 # Load data and precomputed similarity matrix
 movies, users, R_df = load_data()
 popularity_ranking = define_popularity(R_df)
-S = np.load(os.path.join('..', 'data', 'similarity_matrix.npy'))
+S = np.load(os.path.join('data', 'similarity_matrix.npy'))
 
 # Sample movies to show for rating
 sample_movies = movies.sample(10, random_state=42)
