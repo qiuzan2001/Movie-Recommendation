@@ -3,7 +3,7 @@ import numpy as np
 import os
 
 
-def load_data(data_path='/Users/qiuzan/Desktop/CS598/Project 4/data'):
+def load_data(data_path='data'):
     movies = pd.read_csv(
         os.path.join(data_path, 'movies.dat'),
         sep='::',
